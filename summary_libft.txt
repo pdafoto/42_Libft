@@ -1,1 +1,5 @@
-ft_isalpha: Recibe un carácter c (como int) y retorna 1 si es un caracter alfabético o 0 si no es alfabético.
+ft_isalpha: Recibe un carácter c (como int) y retorna 1 si es alfabético o 0 si no lo es.
+ft_isdigit: Recibe un carácter c (como int) y retorna 1 si es un dígito o 0 si no lo es.
+ft_isalnum: Recibe un carácter c (como int) y retorna 1 si es alfanumérico o 0 si no lo es.
+ft_isascii: Recibe un carácter c (como int) y retorna 1 si se encuentra en la tabla ASCII de 7 bits o 0 si no lo está.
+ft_isprint: Recibe un carácter c (como int) y retorna 1 si es imprimible o 0 si no lo es.
