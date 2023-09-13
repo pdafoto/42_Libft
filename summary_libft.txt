@@ -1,0 +1,1 @@
+ft_isalpha: Recibe un carácter c (como int) y retorna 1 si es un caracter alfabético o 0 si no es alfabético.
