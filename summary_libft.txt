@@ -8,3 +8,4 @@ ft_tolower: Recibe un carácter c (como int) y retorna el caráceter en minúscu
 ft_strlen: Recibe un string str y retorna el número de elementos sin contar el '\0' final.
 ft_strlcpy: Copia el nº de caracteres indicado por size de un string src sobre un string dest, siendo el último carácter siempre un '\0'.
 ft_strlcat: Concatena el número de caracteres indicado por size de un string dest al final de un string src, dejando el resultado en el string dest y siendo el último carácter siempre un '\0'.
+ft_strncmp: Compara los primeros n caracteres de dos strings s1 y s2 y devuelve el resto entre los valores ascii de la primera diferencia encontrada.
