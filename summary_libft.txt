@@ -3,3 +3,7 @@ ft_isdigit: Recibe un carácter c (como int) y retorna 1 si es un dígito o 0 si
 ft_isalnum: Recibe un carácter c (como int) y retorna 1 si es alfanumérico o 0 si no lo es.
 ft_isascii: Recibe un carácter c (como int) y retorna 1 si se encuentra en la tabla ASCII de 7 bits o 0 si no lo está.
 ft_isprint: Recibe un carácter c (como int) y retorna 1 si es imprimible o 0 si no lo es.
+ft_toupper: Recibe un carácter c (como int) y retorna el caráceter en mayúscula si era minúscula o el carácter original en cualquier otro caso.
+ft_tolower: Recibe un carácter c (como int) y retorna el caráceter en minúscula si era mayúscula o el carácter original en cualquier otro caso.
+ft_strlen: Recibe un string str y retorna el número de elementos sin contar el '\0' final.
+ft_strlcpy: Copia el nº de caracteres indicado por size de un string src sobre un string dest, siendo el último carácter siempre un '\0'.
