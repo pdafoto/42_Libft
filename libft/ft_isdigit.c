@@ -6,7 +6,7 @@
 /*   By: nperez-d <nperez-d@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/13 15:50:46 by nperez-d          #+#    #+#             */
-/*   Updated: 2023/09/13 16:06:05 by nperez-d         ###   ########.fr       */
+/*   Updated: 2023/09/14 10:35:05 by nperez-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 int	ft_isdigit(int c)
@@ -27,6 +27,6 @@ int	main(int argc, char *argv[])
 	(void)argc;
 	c = *argv[1];
 	res = ft_isdigit(c);
-	printf("%d:\n%d\n", c, res);
+	printf("%c:\n%c\n", c, res);
 	return (0);
 }*/

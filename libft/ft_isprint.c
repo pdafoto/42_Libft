@@ -6,7 +6,7 @@
 /*   By: nperez-d <nperez-d@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/13 16:50:53 by nperez-d          #+#    #+#             */
-/*   Updated: 2023/09/13 16:56:38 by nperez-d         ###   ########.fr       */
+/*   Updated: 2023/09/14 10:35:26 by nperez-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 int	ft_isprint(int c)
@@ -27,6 +27,6 @@ int	main(int argc, char *argv[])
 	(void)argc;
 	c = *argv[1];
 	res = ft_isprint(c);
-	printf("%d:\n%d\n", c, res);
+	printf("%c:\n%c\n", c, res);
 	return (0);
 }*/

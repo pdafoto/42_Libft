@@ -6,7 +6,7 @@
 /*   By: nperez-d <nperez-d@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/13 16:26:34 by nperez-d          #+#    #+#             */
-/*   Updated: 2023/09/13 16:32:54 by nperez-d         ###   ########.fr       */
+/*   Updated: 2023/09/14 10:34:07 by nperez-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 int	ft_isalnum(int c)
@@ -28,6 +28,6 @@ int	main(int argc, char *argv[])
 	(void)argc;
 	c = *argv[1];
 	res = ft_isalnum(c);
-	printf("%d:\n%d\n", c, res);
+	printf("%c:\n%c\n", c, res);
 	return (0);
 }*/
