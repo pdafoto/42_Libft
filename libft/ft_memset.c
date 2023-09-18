@@ -1,35 +1,46 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nperez-d <nperez-d@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/14 12:11:30 by nperez-d          #+#    #+#             */
-/*   Updated: 2023/09/18 20:09:56 by nperez-d         ###   ########.fr       */
+/*   Created: 2023/09/18 20:14:32 by nperez-d          #+#    #+#             */
+/*   Updated: 2023/09/18 20:52:17 by nperez-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
 
-size_t	ft_strlen(const char *s)
+void	*ft_memset(void *b, int c, size_t len)
 {
-	int	ctr;
+	size_t			i;
+	unsigned char	*ptr;
 
-	ctr = 0;
-	while (*s)
+	i = 0;
+	ptr = (unsigned char *)b;
+	while (i < len)
 	{
-		ctr++;
-		s++;
+		ptr[i] = (unsigned char)c;
+		i++;
 	}
-	return (ctr);
+	return (b);
 }
 
 // #include <stdio.h>
 
 // int	main(int argc, char *argv[])
 // {
+// 	int	c;
+// 	size_t	len;
+
 // 	(void)argc;
-// 	printf("La longitud de '%s' es %zu\n", argv[1], ft_strlen(argv[1]));
+// 	printf("Origen: %s\n", argv[1]);
+// 	printf("Introduce el valor ascii del caracter: ");
+// 	scanf("%d", &c);
+// 	printf("Introduce el tamaño: ");
+// 	scanf("%zu", &len);
+// 	ft_memset(argv[1], 'c', len);
+// 	printf("Despues: %s\n", argv[1]);
 // 	return (0);
 // }
