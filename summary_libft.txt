@@ -1,11 +1,14 @@
-ft_isalpha: Recibe un carácter c (como int) y retorna 1 si es alfabético o 0 si no lo es.
-ft_isdigit: Recibe un carácter c (como int) y retorna 1 si es un dígito o 0 si no lo es.
+ft_bzero: Llena los primeros n bytes del área de memoria apuntada por s con '\0'.
 ft_isalnum: Recibe un carácter c (como int) y retorna 1 si es alfanumérico o 0 si no lo es.
+ft_isalpha: Recibe un carácter c (como int) y retorna 1 si es alfabético o 0 si no lo es.
 ft_isascii: Recibe un carácter c (como int) y retorna 1 si se encuentra en la tabla ASCII de 7 bits o 0 si no lo está.
+ft_isdigit: Recibe un carácter c (como int) y retorna 1 si es un dígito o 0 si no lo es.
 ft_isprint: Recibe un carácter c (como int) y retorna 1 si es imprimible o 0 si no lo esft_strlen: Recibe un string str y retorna el número de elementos sin contar el '\0' final.
-ft_strlcpy: Copia el nº de caracteres indicado por size de un string src sobre un string dest, siendo el último carácter siempre un '\0'.
+ft_memset: Llena los primeros len bytes del área de memoria apuntada por b con el carácter c y retorna un puntero a b.
 ft_strlcat: Concatena el número de caracteres indicado por size de un string dest al final de un string src, dejando el resultado en el string dest y siendo el último carácter siempre un '\0'.
-ft_strncmp: Compara los primeros n caracteres de dos strings s1 y s2 y devuelve el resto entre los valores ascii de la primera diferencia encontrada..
-ft_toupper: Recibe un carácter c (como int) y retorna el caráceter en mayúscula si era minúscula o el carácter original en cualquier otro caso.
+ft_strlcpy: Copia el nº de caracteres indicado por size de un string src sobre un string dest, siendo el último carácter siempre un '\0'.
+ft_strncmp: Compara los primeros n caracteres de dos strings s1 y s2 y devuelve el resto entre los valores ascii de la primera diferencia encontrada.
 ft_tolower: Recibe un carácter c (como int) y retorna el caráceter en minúscula si era mayúscula o el carácter original en cualquier otro caso.
+ft_toupper: Recibe un carácter c (como int) y retorna el caráceter en mayúscula si era minúscula o el carácter original en cualquier otro caso.
+
 
