@@ -11,6 +11,7 @@ ft_strlcat: Concatena "dstsize" caracteres de un string "dst" al final de un str
 ft_strlcpy: Copia "dstsize" caracteres de un string "src" sobre un string "dst", siendo el último carácter siempre un '\0'.
 ft_strlen: Recibe un string "s" y retorna su número de elementos sin contar el '\0' final.
 ft_strncmp: Compara los primeros "n" caracteres de dos strings "s1" y "s2" y devuelve el resto entre los valores ascii de la primera diferencia encontrada.
+ft_strrchr: Busca la última aparición del caracter "c" en un string "s" y retorna un puntero a su posición, si no lo encuentra retrona 'null'.
 ft_tolower: Recibe un carácter "c" (como int) y retorna el caráceter en minúscula si era mayúscula o el carácter original en cualquier otro caso.
 ft_toupper: Recibe un carácter "c" (como int) y retorna el caráceter en mayúscula si era minúscula o el carácter original en cualquier otro caso.
 
