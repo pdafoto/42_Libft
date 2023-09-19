@@ -4,7 +4,8 @@ ft_isalpha: Recibe un carácter "c" (como int) y retorna '1' si es alfabético o
 ft_isascii: Recibe un carácter "c" (como int) y retorna '1' si es de la tabla ASCII de 7 bits o '0' si no lo es.
 ft_isdigit: Recibe un carácter "c" (como int) y retorna '1' si es un dígito o '0' si no lo es.
 ft_isprint: Recibe un carácter "c" (como int) y retorna '1' si es imprimible o '0' si no lo es
-ft_memchr: Busca la última aparición del caracter "c" en los el área de memoria "s" y los "n" espacios siguientes y retorna un puntero a su posición, si no lo encuentra retorna 'null'.
+ft_memchr: Busca la última aparición del caracter "c" en "n" bytes desde el área de memoria "s" y retorna un puntero a su posición, si no lo encuentra retorna 'null'.
+ft_memcmp: Compara los primeros "n" bytes de dos áreas de meroria "s1" y "s2" y devuelve el resto entre los valores ascii de la primera diferencia encontrada.
 ft_memcpy: Copia "n" caracteres del área de memoria "src" al área de memoria "dst".
 ft_memset: Llena los primeros "len" bytes del área de memoria apuntada por "b" con el carácter "c" y retorna un puntero a "b".
 ft_strchr: Busca la primera aparición del caracter "c" en un string "s" y retorna un puntero a su posición, si no lo encuentra retrona 'null'.
