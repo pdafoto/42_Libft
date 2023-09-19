@@ -6,7 +6,7 @@
 /*   By: nperez-d <nperez-d@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/19 18:48:07 by nperez-d          #+#    #+#             */
-/*   Updated: 2023/09/19 19:58:45 by nperez-d         ###   ########.fr       */
+/*   Updated: 2023/09/19 20:22:26 by nperez-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (NULL);
 }
-
+/*
 #include <stdio.h>
 
 int	main(int argc, char *argv[])
@@ -51,4 +51,4 @@ int	main(int argc, char *argv[])
 	scanf("%u", &size);
 	printf("Encontrado: %s\n", ft_strnstr(argv[1], argv[2], size));
 	return (0);
-}
+}*/

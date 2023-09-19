@@ -1,3 +1,4 @@
+ft_atoi: Recibe un string "str" y devuelve el int del incio de ese string.
 ft_bzero: Llena los primeros "n" bytes del área de memoria apuntada por "s" con '\0'.
 ft_isalnum: Recibe un carácter "c" (como int) y retorna '1' si es alfanumérico o '0' si no lo es.
 ft_isalpha: Recibe un carácter "c" (como int) y retorna '1' si es alfabético o '0' si no lo es.
