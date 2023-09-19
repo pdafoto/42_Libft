@@ -4,6 +4,7 @@ ft_isalpha: Recibe un carácter c (como int) y retorna 1 si es alfabético o 0 s
 ft_isascii: Recibe un carácter c (como int) y retorna 1 si se encuentra en la tabla ASCII de 7 bits o 0 si no lo está.
 ft_isdigit: Recibe un carácter c (como int) y retorna 1 si es un dígito o 0 si no lo es.
 ft_isprint: Recibe un carácter c (como int) y retorna 1 si es imprimible o 0 si no lo esft_strlen: Recibe un string str y retorna el número de elementos sin contar el '\0' final.
+ft_memcpy: Copia n caracteres del área de memoria src al área de memoria dst.
 ft_memset: Llena los primeros len bytes del área de memoria apuntada por b con el carácter c y retorna un puntero a b.
 ft_strlcat: Concatena el número de caracteres indicado por size de un string dest al final de un string src, dejando el resultado en el string dest y siendo el último carácter siempre un '\0'.
 ft_strlcpy: Copia el nº de caracteres indicado por size de un string src sobre un string dest, siendo el último carácter siempre un '\0'.
