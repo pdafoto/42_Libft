@@ -6,13 +6,13 @@
 /*   By: nperez-d <nperez-d@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/19 11:22:02 by nperez-d          #+#    #+#             */
-/*   Updated: 2023/09/19 11:48:42 by nperez-d         ###   ########.fr       */
+/*   Updated: 2023/09/20 16:33:01 by nperez-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
 
-void	*ft_memcpy(void *restrict dst, const void *restrict src, size_t n)
+void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
 	size_t		i;
 	char		*dst_char;

@@ -21,6 +21,6 @@ ft_strrchr: Busca la última aparición del caracter "c" en un string "s" y reto
 ft_tolower: Recibe un carácter "c" (como int) y retorna el caráceter en minúscula si era mayúscula o el carácter original en cualquier otro caso.
 ft_toupper: Recibe un carácter "c" (como int) y retorna el caráceter en mayúscula si era minúscula o el carácter original en cualquier otro caso.
 
-REVISAR TEMA RESTRICT!!!!
+
 
 

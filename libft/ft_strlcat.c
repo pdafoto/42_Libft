@@ -6,13 +6,13 @@
 /*   By: nperez-d <nperez-d@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 14:38:39 by nperez-d          #+#    #+#             */
-/*   Updated: 2023/09/19 12:47:14 by nperez-d         ###   ########.fr       */
+/*   Updated: 2023/09/20 16:32:59 by nperez-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
 
-size_t	ft_strlcat(char *restrict dst, const char *restrict src, size_t dstsize)
+size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
 	size_t	ctr_dst;
 	size_t	ctr_src;
