@@ -6,11 +6,11 @@
 /*   By: nperez-d <nperez-d@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/19 20:26:33 by nperez-d          #+#    #+#             */
-/*   Updated: 2023/09/19 20:38:33 by nperez-d         ###   ########.fr       */
+/*   Updated: 2023/09/20 17:54:42 by nperez-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 char	*ft_strdup(const char *s1)
 {
