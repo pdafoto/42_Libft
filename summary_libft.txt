@@ -19,6 +19,7 @@ ft_strlen: Recibe un string "s" y retorna su número de elementos sin contar el 
 ft_strncmp: Compara los primeros "n" caracteres de dos strings "s1" y "s2" y devuelve el resto entre los valores ascii de la primera diferencia encontrada.
 ft_strnstr: Busca la primera aparición del string "needle" en el string "haystack", buscando como máximo "len" caracteres.
 ft_strrchr: Busca la última aparición del caracter "c" en un string "s" y retorna un puntero a su posición, si no lo encuentra retorna 'null'.
+ft_strtrim: Elimina todos los caracteres de la string "set" desde el principio y desde el final de "s1", hasta encontrar un caracter no perteneciente a "set". La string resultante se devuelve con una reserva de malloc(3)
 ft_substr: Reserva (con malloc(3)) y devuelve una substring de la string "s". La substring empieza desde el índice "start" y tiene una longitud máxima "len".
 ft_tolower: Recibe un carácter "c" (como int) y retorna el caráceter en minúscula si era mayúscula o el carácter original en cualquier otro caso.
 ft_toupper: Recibe un carácter "c" (como int) y retorna el caráceter en mayúscula si era minúscula o el carácter original en cualquier otro caso.
