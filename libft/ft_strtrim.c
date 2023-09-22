@@ -6,7 +6,7 @@
 /*   By: nperez-d <nperez-d@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/21 15:14:32 by nperez-d          #+#    #+#             */
-/*   Updated: 2023/09/22 09:47:34 by nperez-d         ###   ########.fr       */
+/*   Updated: 2023/09/22 09:49:03 by nperez-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 		i--;
 	return (ft_substr(s1, 0, i + 1));
 }
-
+/*
 #include <stdio.h>
 
 int	main(int argc, char *argv[])
@@ -36,3 +36,4 @@ int	main(int argc, char *argv[])
 	printf("Result: %s\n", ft_strtrim(argv[1], argv[2]));
 	return (0);
 }
+ */
