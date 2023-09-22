@@ -6,7 +6,7 @@
 /*   By: nperez-d <nperez-d@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 14:38:39 by nperez-d          #+#    #+#             */
-/*   Updated: 2023/09/20 17:54:48 by nperez-d         ###   ########.fr       */
+/*   Updated: 2023/09/22 14:49:18 by nperez-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,18 +34,19 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	dst[ctr_dst] = '\0';
 	return (ctr_dst + ctr_src);
 }
+/*
+#include <stdio.h>
 
-// #include <stdio.h>
+int	main(int argc, char *argv[])
+{
+	size_t	dstsize;
 
-// int	main(int argc, char *argv[])
-// {
-// 	size_t	dstsize;
-
-// 	(void)argc;
-// 	printf("Origen: %s\nDestino: %s\n", argv[1], argv[2]);
-// 	printf("Introduce el tamaño: ");
-// 	scanf("%zu", &dstsize);
-// 	ft_strlcat(argv[2], argv[1], dstsize);
-// 	printf("Resultado: %s\n", argv[2]);
-// 	return (0);
-// }
+	(void)argc;
+	printf("Origen: %s\nDestino: %s\n", argv[1], argv[2]);
+	printf("Introduce el tamaño: ");
+	scanf("%zu", &dstsize);
+	ft_strlcat(argv[2], argv[1], dstsize);
+	printf("Resultado: %s\n", argv[2]);
+	return (0);
+}
+ */
