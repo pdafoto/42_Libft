@@ -6,7 +6,7 @@
 /*   By: nperez-d <nperez-d@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 14:38:39 by nperez-d          #+#    #+#             */
-/*   Updated: 2023/09/22 14:49:18 by nperez-d         ###   ########.fr       */
+/*   Updated: 2023/09/28 16:09:20 by nperez-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,25 +14,23 @@
 
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
-	size_t	ctr_dst;
-	size_t	ctr_src;
+	size_t	dst_len;
+	size_t	src_len;
+	size_t	tot_len;
 
-	ctr_dst = 0;
-	ctr_src = 0;
-	while (dst[ctr_dst])
-		ctr_dst++;
-	while (src[ctr_src])
-		ctr_src++;
-	if (dstsize == 0 || dstsize <= ctr_dst)
-		return (ctr_src + dstsize);
-	while (*src && ctr_dst < dstsize - 1)
+	dst_len = ft_strlen(dst);
+	src_len = ft_strlen(src);
+	tot_len = dst_len + src_len;
+	if (dstsize == 0 || dstsize <= dst_len)
+		return (src_len + dstsize);
+	while (*src && dst_len < dstsize - 1)
 	{
-		dst[ctr_dst] = *src;
-		ctr_dst++;
+		dst[dst_len] = *src;
+		dst_len++;
 		src++;
 	}
-	dst[ctr_dst] = '\0';
-	return (ctr_dst + ctr_src);
+	dst[dst_len] = '\0';
+	return (tot_len);
 }
 /*
 #include <stdio.h>
@@ -49,4 +47,4 @@ int	main(int argc, char *argv[])
 	printf("Resultado: %s\n", argv[2]);
 	return (0);
 }
- */
+*/
