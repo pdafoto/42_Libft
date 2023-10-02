@@ -6,7 +6,7 @@
 /*   By: nperez-d <nperez-d@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/19 11:22:02 by nperez-d          #+#    #+#             */
-/*   Updated: 2023/09/20 17:54:14 by nperez-d         ###   ########.fr       */
+/*   Updated: 2023/10/02 19:16:44 by nperez-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,14 @@
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-	size_t		i;
-	char		*dst_char;
-	const char	*src_char;
+	size_t	i;
+	char	*dst_char;
+	char	*src_char;
 
+	if (!dst && !src)
+		return (0);
 	dst_char = (char *)dst;
-	src_char = (const char *)src;
+	src_char = (char *)src;
 	i = 0;
 	while (i < n)
 	{

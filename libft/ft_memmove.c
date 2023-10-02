@@ -6,7 +6,7 @@
 /*   By: nperez-d <nperez-d@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/25 17:38:07 by nperez-d          #+#    #+#             */
-/*   Updated: 2023/09/25 18:23:12 by nperez-d         ###   ########.fr       */
+/*   Updated: 2023/10/02 19:42:10 by nperez-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,30 +14,23 @@
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	size_t		i;
-	char		*dst_char;
-	const char	*src_char;
+	char	*dst_char;
+	char	*src_char;
 
+	if (!dst && !src)
+		return (0);
 	dst_char = (char *)dst;
-	src_char = (const char *)src;
+	src_char = (char *)src;
 	if (dst_char > src_char && dst_char < src_char + len)
 	{
-		i = len;
-		while (i > 0)
+		while (len > 0)
 		{
-			i--;
-			dst_char[i] = src_char[i];
+			len--;
+			dst_char[len] = src_char[len];
 		}
 	}
 	else
-	{
-		i = 0;
-		while (i < len)
-		{
-			dst_char[i] = src_char[i];
-			i++;
-		}
-	}
+		ft_memcpy(dst_char, src_char, len);
 	return (dst);
 }
 /*
