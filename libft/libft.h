@@ -6,7 +6,7 @@
 /*   By: nperez-d <nperez-d@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/20 17:13:56 by nperez-d          #+#    #+#             */
-/*   Updated: 2023/09/25 17:40:48 by nperez-d         ###   ########.fr       */
+/*   Updated: 2023/10/02 14:32:52 by nperez-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,11 @@ int		ft_isascii(int c);
 int		ft_isdigit(int c);
 int		ft_isprint(int c);
 
+int		ft_atoi(const char *str);
+char	*ft_itoa(int n);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
 
-int		ft_atoi(const char *str);
 char	**ft_split(char const *s, char c);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strjoin(char const *s1, char const *s2);
