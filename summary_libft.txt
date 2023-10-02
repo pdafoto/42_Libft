@@ -15,10 +15,12 @@ ft_memset: Llena los primeros "len" bytes del área de memoria apuntada por "b" 
 ft_split: Reserva (utilizando malloc(3)) un array de strings resultante de separar la string "s" en substrings utilizando el caracter "c" como delimitador. El array debe terminar con un puntero NULL.
 ft_strchr: Busca la primera aparición del caracter "c" en un string "s" y retorna un puntero a su posición, si no lo encuentra retrona 'null'.
 ft_strdup: Recibe un string "s1" y lo duplica asignando la memoria necesaria.
+ft_striteri: A cada carácter de la string ’s’, aplica la función ’f’ dando como parámetros el índice de cada carácter dentro de ’s’ y la dirección del propio carácter, que podrá modificarse si es necesario.
 ft_strjoin: Reserva (con malloc(3)) y devuelve una nueva string, formada por la concatenación de "s1" y "s2".
 ft_strlcat: Concatena "dstsize" caracteres de un string "dst" al final de un string "src", dejando el resultado en el string "dst" y siendo el último carácter siempre un '\0'.
 ft_strlcpy: Copia "dstsize" caracteres de un string "src" sobre un string "dst", siendo el último carácter siempre un '\0'.
 ft_strlen: Recibe un string "s" y retorna su número de elementos sin contar el '\0' final.
+ft_strmapi: A cada carácter de la string ’s’, aplica la función ’f’ dando como parámetros el índice de cada carácter dentro de ’s’ y el propio carácter. Genera una nueva string con el resultado del uso sucesivo de ’f’
 ft_strncmp: Compara los primeros "n" caracteres de dos strings "s1" y "s2" y devuelve el resto entre los valores ascii de la primera diferencia encontrada.
 ft_strnstr: Busca la primera aparición del string "needle" en el string "haystack", buscando como máximo "len" caracteres.
 ft_strrchr: Busca la última aparición del caracter "c" en un string "s" y retorna un puntero a su posición, si no lo encuentra retorna 'null'.
