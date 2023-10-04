@@ -6,7 +6,7 @@
 #    By: nperez-d <nperez-d@student.42madrid.com>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/22 13:03:18 by nperez-d          #+#    #+#              #
-#    Updated: 2023/10/02 17:10:45 by nperez-d         ###   ########.fr        #
+#    Updated: 2023/10/04 18:07:06 by nperez-d         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,7 @@ SRCS		:= ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c \
 				ft_tolower.c ft_strchr.c ft_strrchr.c ft_strncmp.c ft_memchr.c \
 				ft_memcmp.c ft_strnstr.c ft_atoi.c ft_calloc.c ft_strdup.c \
 				ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c \
-				ft_strmapi.c ft_striteri.c
+				ft_strmapi.c ft_striteri.c ft_putchar_fd.c
 
 OBJS		:= $(SRCS:.c=.o)
 
