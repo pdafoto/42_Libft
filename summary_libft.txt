@@ -12,6 +12,10 @@ ft_memcmp: Compara los primeros "n" bytes de dos áreas de meroria "s1" y "s2" y
 ft_memcpy: Copia "n" caracteres del área de memoria "src" al área de memoria "dst".
 ft_memmove: Ccopies "len" bytes from string "src" to string "dst". The two strings may overlap; the copy is always done in a non-destructive manner. Returns the original value of "dst".
 ft_memset: Llena los primeros "len" bytes del área de memoria apuntada por "b" con el carácter "c" y retorna un puntero a "b".
+ft_putchar_fd: Envía el carácter ’c’ al file descriptor especificado.
+ft_putendl_fd: Envía la string ’s’ al file descriptor dado, seguido de un salto de línea.
+ft_putnbr_fd: Envía el número ’n’ al file descriptor dado.
+ft_putstr_fd: Envía la string ’s’ al file descriptor especificado.
 ft_split: Reserva (utilizando malloc(3)) un array de strings resultante de separar la string "s" en substrings utilizando el caracter "c" como delimitador. El array debe terminar con un puntero NULL.
 ft_strchr: Busca la primera aparición del caracter "c" en un string "s" y retorna un puntero a su posición, si no lo encuentra retrona 'null'.
 ft_strdup: Recibe un string "s1" y lo duplica asignando la memoria necesaria.
