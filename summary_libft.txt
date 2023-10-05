@@ -6,7 +6,12 @@ ft_isalpha: Recibe un carácter "c" (como int) y retorna '1' si es alfabético o
 ft_isascii: Recibe un carácter "c" (como int) y retorna '1' si es de la tabla ASCII de 7 bits o '0' si no lo es.
 ft_isdigit: Recibe un carácter "c" (como int) y retorna '1' si es un dígito o '0' si no lo es.
 ft_isprint: Recibe un carácter "c" (como int) y retorna '1' si es imprimible o '0' si no lo es
-ft_itia: Utilizando malloc(3), genera una string que represente el valor entero recibido como argumento. Los números negativos tienen que gestionarse.
+ft_itoa: Utilizando malloc(3), genera una string que represente el valor entero recibido como argumento. Los números negativos tienen que gestionarse.
+ft_lstadd_back: Añade el nodo ’new’ al final de la lista ’lst’.
+ft_lstadd_front: Añade el nodo ’new’ al principio de la lista ’lst’.
+ft_lstlast: Devuelve el último nodo de la lista.
+ft_lstnew: Crea un nuevo nodo utilizando malloc(3). La variable miembro ’content’ se inicializa con el contenido del parámetro ’content’. La variable ’next’, con NULL.
+ft_lstsize: Cuenta el número de nodos de una lista.
 ft_memchr: Busca la última aparición del caracter "c" en "n" bytes desde el área de memoria "s" y retorna un puntero a su posición, si no lo encuentra retorna 'null'.
 ft_memcmp: Compara los primeros "n" bytes de dos áreas de meroria "s1" y "s2" y devuelve el resto entre los valores ascii de la primera diferencia encontrada.
 ft_memcpy: Copia "n" caracteres del área de memoria "src" al área de memoria "dst".

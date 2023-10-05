@@ -6,11 +6,12 @@
 #    By: nperez-d <nperez-d@student.42madrid.com>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/22 13:03:18 by nperez-d          #+#    #+#              #
-#    Updated: 2023/10/04 19:01:47 by nperez-d         ###   ########.fr        #
+#    Updated: 2023/10/05 16:51:05 by nperez-d         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME		:= libft.a
+BONUS_NAME	:= .bonus
 
 SRCS		:= ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c \
 				ft_isprint.c ft_strlen.c ft_memset.c ft_bzero.c ft_memcpy.c \
@@ -21,7 +22,11 @@ SRCS		:= ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c \
 				ft_strmapi.c ft_striteri.c ft_putchar_fd.c ft_putstr_fd.c \
 				ft_putendl_fd.c ft_putnbr_fd.c
 
+BONUS_SRCS	:= ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c \
+				ft_lstadd_back.c
+
 OBJS		:= $(SRCS:.c=.o)
+BONUS_OBJS	:= $(BONUS_SRCS:.c=.o)
 
 CC			:= cc
 CFLAGS		:= -Wall -Wextra -Werror
@@ -33,11 +38,17 @@ all: $(NAME)
 $(NAME): $(OBJS)
 	ar rcs $(NAME) $(OBJS)
 
+bonus: $(BONUS_NAME)
+
+$(BONUS_NAME): $(OBJS) $(BONUS_OBJS)
+	ar rcs $(NAME) $(OBJS) $(BONUS_OBJS)
+	ar rcs $(BONUS_NAME) $(OBJS) $(BONUS_OBJS)
+
 clean:
-	$(RM) $(OBJS)
+	$(RM) $(OBJS) $(BONUS_OBJS)
 
 fclean: clean
-	$(RM) $(NAME)
+	$(RM) $(NAME) $(BONUS_NAME)
 
 re: fclean all
 
