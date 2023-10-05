@@ -9,7 +9,12 @@ ft_isprint: Recibe un carácter "c" (como int) y retorna '1' si es imprimible o 
 ft_itoa: Utilizando malloc(3), genera una string que represente el valor entero recibido como argumento. Los números negativos tienen que gestionarse.
 ft_lstadd_back: Añade el nodo ’new’ al final de la lista ’lst’.
 ft_lstadd_front: Añade el nodo ’new’ al principio de la lista ’lst’.
+ft_lstclear: Elimina y libera el nodo ’lst’ dado y todos los consecutivos de ese nodo, utilizando la función ’del’ y free(3).
+Al final, el puntero a la lista debe ser NULL.
+ft_lstdelone: Toma como parámetro un nodo ’lst’ y libera la memoria del contenido utilizando la función ’del’ dada como parámetro, además de liberar el nodo. La memoria de ’next’ no debe liberarse.
+ft_lstiter: Itera la lista ’lst’ y aplica la función ’f’ en el contenido de cada nodo.
 ft_lstlast: Devuelve el último nodo de la lista.
+ft_lstmap: Itera la lista ’lst’ y aplica la función ’f’ al contenido de cada nodo. Crea una lista resultante de la aplicación correcta y sucesiva de la función ’f’ sobre cada nodo. La función ’del’ se utiliza para eliminar el contenido de un nodo, si hace falta.
 ft_lstnew: Crea un nuevo nodo utilizando malloc(3). La variable miembro ’content’ se inicializa con el contenido del parámetro ’content’. La variable ’next’, con NULL.
 ft_lstsize: Cuenta el número de nodos de una lista.
 ft_memchr: Busca la última aparición del caracter "c" en "n" bytes desde el área de memoria "s" y retorna un puntero a su posición, si no lo encuentra retorna 'null'.
