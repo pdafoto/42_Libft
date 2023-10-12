@@ -6,7 +6,7 @@
 /*   By: nperez-d <nperez-d@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/05 19:12:18 by nperez-d          #+#    #+#             */
-/*   Updated: 2023/10/12 20:03:43 by nperez-d         ###   ########.fr       */
+/*   Updated: 2023/10/12 20:07:41 by nperez-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,13 @@
 
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	t_list	*first;
+	t_list	*start;
 	t_list	*new;
 	void	*content;
 
 	if (!f || !del)
 		return (NULL);
-	first = NULL;
+	start = NULL;
 	while (lst)
 	{
 		content = (*f)(lst->content);
@@ -28,13 +28,13 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 		if (!new)
 		{
 			(*del)(content);
-			ft_lstclear(&first, del);
+			ft_lstclear(&start, del);
 			return (0);
 		}
-		ft_lstadd_back(&first, new);
+		ft_lstadd_back(&start, new);
 		lst = lst->next;
 	}
-	return (first);
+	return (start);
 }
 /*
 #include <stdio.h>
