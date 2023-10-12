@@ -6,7 +6,7 @@
 /*   By: nperez-d <nperez-d@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/25 16:30:28 by nperez-d          #+#    #+#             */
-/*   Updated: 2023/09/27 20:53:46 by nperez-d         ###   ########.fr       */
+/*   Updated: 2023/10/12 19:52:56 by nperez-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,44 +35,78 @@ static size_t	word_count(char const *s, char c)
 	return (wrd_cnt);
 }
 
-static void	cut_words(char **words, char const *s, char c, size_t wrd_cnt)
+static int	word_len(const char *s, char c)
 {
-	char	*ptr_c;
+	int	i;
+	int	wrd_len;
 
-	while (*s && *s == c)
-		s++;
-	while (wrd_cnt)
+	i = 0;
+	wrd_len = 0;
+	while (s[i])
 	{
-		ptr_c = ft_strchr(s, c);
-		if (ptr_c != NULL)
-		{
-			*words = ft_substr(s, 0, ptr_c - s);
-			while (*ptr_c && *ptr_c == c)
-				ptr_c++;
-			s = ptr_c;
-		}
-		else
-			*words = ft_substr(s, 0, ft_strlen(s) + 1);
-		words++;
-		wrd_cnt--;
+		if (s[i] == c)
+			return (wrd_len);
+		wrd_len++;
+		i++;
 	}
-	*words = NULL;
+	return (wrd_len);
 }
 
-char	**ft_split(char const *s, char c)
+static void	word_copy(char *dst, const char *src, int wrd_len)
 {
-	char	**words;
-	size_t	wrd_cnt;
+	int	i;
 
-	if (s == NULL)
-		return (NULL);
-	wrd_cnt = word_count(s, c);
-	words = malloc((wrd_cnt + 1) * sizeof(char **));
-	if (words == NULL)
-		return (NULL);
-	cut_words(words, s, c, wrd_cnt);
-	return (words);
+	i = 0;
+	while (i < wrd_len && src[i])
+	{
+		dst[i] = src[i];
+		i++;
+	}
+	dst[i] = '\0';
 }
+
+static void	free_word(char **array, int size)
+{
+	int	i;
+
+	i = 0;
+	while (i < size)
+	{
+		free(array[i]);
+		i++;
+	}
+	free(array);
+}
+
+char	**ft_split(const char *s, char c)
+{
+	char		**array;
+	int			i;
+	int			wrd_cnt;
+
+	wrd_cnt = word_count(s, c);
+	array = (char **)malloc((wrd_cnt + 1) * sizeof(char *));
+	if (array == NULL)
+		return (NULL);
+	i = 0;
+	while (*s && wrd_cnt > 0)
+	{
+		if (!word_len(s, c))
+			s++;
+		else
+		{
+			array[i++] = (char *)malloc(sizeof(char) * word_len(s, c) + 1);
+			if (!array[i - 1])
+				return (free_word(array, i), NULL);
+			word_copy(array[i - 1], s, word_len(s, c));
+			s = s + word_len(s, c);
+			wrd_cnt--;
+		}
+	}
+	array[i] = NULL;
+	return (array);
+}
+
 /* #include <stdio.h>
 
 int	main(int argc, char *argv[])
